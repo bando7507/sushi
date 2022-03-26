@@ -3,3 +3,146 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    width: 100%;
+    background-color: #21243d;
+}
+
+header .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+.menu ul {
+    display: block;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #fff;
+    transition: .4s;
+}
+
+.menu ul li a:hover {
+    color: rgb(247, 247, 111);
+}
+
+.home {
+    background-image: url('img/BG1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 93vh;
+    max-height: 900px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 100px;
+}
+
+.content-hone .title {
+    font-size: 100px;
+    color: #fff;
+}
+
+.text {
+    padding: 40px 0;
+}
+
+.text-1,
+.text-2,
+.text-3 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.content-hone a {
+    background-color: #21243d;
+    border: 4px solid #21243d;
+    padding: 15px 75px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 25px;
+    transition: .4s all;
+}
+
+.content-hone a:hover {
+    background: none;
+    color: #21243d;
+}
+
+.first {
+    background-image: url('img/bg-content.png');
+    height: 100vh;
+    background-size: cover;
+}
+
+.first .max-width {
+    padding: 0 150px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top .top-title {
+    padding: 40px 0;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.top-content {
+    text-align: center;
+}
+
+.top-content .txt-1,
+.top-content .txt-2 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.wapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.wapper .card-img {
+    border-radius: 50%;
+}
+
+.wapper .card-img img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.wapper .card-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.wapper .card-info .title {
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+.wapper .card-info .text-1,
+.wapper .card-info .text-2 {
+    color: #fff;
+    font-size: 1rem;
+}
