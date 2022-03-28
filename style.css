@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,10 @@ header .max-width {
     align-items: center;
     justify-content: space-between;
     padding: 15px 50px;
+}
+
+header .max-width .logo img {
+    width: 150px;
 }
 
 .menu ul {
@@ -40,8 +46,7 @@ header .max-width {
     background-size: cover;
     background-position: center;
     display: flex;
-    height: 93vh;
-    max-height: 900px;
+    height: 100vh;
 }
 
 .home .max-width {
@@ -51,10 +56,11 @@ header .max-width {
 .content-hone .title {
     font-size: 100px;
     color: #fff;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .text {
-    padding: 40px 0;
+    padding: 45px 0;
 }
 
 .text-1,
@@ -62,6 +68,7 @@ header .max-width {
 .text-3 {
     color: #fff;
     font-size: 1.5em;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .content-hone a {
@@ -74,6 +81,8 @@ header .max-width {
     color: #fff;
     font-size: 25px;
     transition: .4s all;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
 }
 
 .content-hone a:hover {
@@ -83,7 +92,7 @@ header .max-width {
 
 .first {
     background-image: url('img/bg-content.png');
-    height: 100vh;
+    height: 100%;
     background-size: cover;
 }
 
@@ -102,6 +111,7 @@ header .max-width {
     padding: 40px 0;
     font-size: 4rem;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .top-content {
@@ -112,13 +122,14 @@ header .max-width {
 .top-content .txt-2 {
     font-size: 1.5rem;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 0;
+    padding: 100px 0;
 }
 
 .wapper .card-img {
@@ -139,10 +150,447 @@ header .max-width {
     font-size: 1.5rem;
     margin: 0 0 15px 0;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wapper .card-info .text-1,
 .wapper .card-info .text-2 {
     color: #fff;
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.second {
+    background-image: url('img/bg-content2.png');
+    height: 100%;
+    background-size: cover;
+}
+
+.second .max-width {
+    padding: 200px 130px;
+}
+
+.second .second-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.second .second-content .left-content img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+.second .second-content .rigth-content .title {
+    font-size: 4rem;
+    color: #21243d;
+}
+
+.second .second-content .rigth-content .text-1,
+.second .second-content .rigth-content .text-3,
+.second .second-content .rigth-content .text-3 {
+    color: #21243d;
+    font-size: 2rem;
+}
+
+.second .second-content .rigth-content a {
+    background-color: #21243d;
+    border: 4px solid #21243d;
+    padding: 10px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    transition: .4s all;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.second .second-content .rigth-content a:hover {
+    background: none;
+    color: #21243d;
+}
+
+.third {
+    background-image: url('img/bg-cotent3.png');
+    height: 100vh;
+    background-size: cover;
+}
+
+.third .wapper--2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.third .max-width {
+    padding: 0 100px;
+}
+
+.third .wapper--2 .circle {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.number {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.info {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.release {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.release-show {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.9s cubic-bezier(.5, 0, 0, 1);
+}
+
+@media (max-width: 1487px) {
+    .second .max-width {
+        padding: 250px 50px;
+    }
+    .second .second-content .left-content img {
+        width: 320px;
+        border-radius: 50%;
+    }
+    .second .second-content .rigth-content .title {
+        font-size: 3rem;
+        color: #21243d;
+    }
+    .second .second-content .rigth-content .text-1,
+    .second .second-content .rigth-content .text-3,
+    .second .second-content .rigth-content .text-3 {
+        color: #21243d;
+        font-size: 2rem;
+    }
+    .second .second-content .rigth-content a {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .second .max-width {
+        padding: 250px 20px;
+    }
+    .second .second-content .left-content img {
+        width: 320px;
+        border-radius: 50%;
+    }
+    .second .second-content .rigth-content .title {
+        font-size: 2.5rem;
+        color: #21243d;
+    }
+    .second .second-content .rigth-content .text-1,
+    .second .second-content .rigth-content .text-3,
+    .second .second-content .rigth-content .text-3 {
+        color: #21243d;
+        font-size: 1.8rem;
+    }
+    .second .second-content .rigth-content a {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1150px) {
+    header .max-width {
+        padding: 10px 30px;
+    }
+    .home .max-width {
+        margin: auto 0 auto 70px;
+    }
+    .first .max-width {
+        padding: 0 100px;
+    }
+    .second .second-content .left-content img {
+        width: 320px;
+        border-radius: 50%;
+    }
+    .second .second-content .rigth-content .title {
+        font-size: 2.2rem;
+        color: #21243d;
+    }
+    .second .second-content .rigth-content .text-1,
+    .second .second-content .rigth-content .text-3,
+    .second .second-content .rigth-content .text-3 {
+        color: #21243d;
+        font-size: 1.5rem;
+    }
+    .second .second-content .rigth-content a {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1015px) {
+    .second .second-content .left-content img {
+        width: 280px;
+        border-radius: 50%;
+    }
+    .second .second-content .rigth-content .title {
+        font-size: 2rem;
+        color: #21243d;
+    }
+    .second .second-content .rigth-content .text-1,
+    .second .second-content .rigth-content .text-3,
+    .second .second-content .rigth-content .text-3 {
+        color: #21243d;
+        font-size: 1.3rem;
+    }
+    .second .second-content .rigth-content a {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 933px) {
+    .content-hone .title {
+        font-size: 70px;
+        color: #fff;
+    }
+    .text {
+        padding: 40px 0;
+    }
+    .text-1,
+    .text-2,
+    .text-3 {
+        color: #fff;
+        font-size: 1em;
+    }
+    .content-hone a {
+        padding: 10px 40px;
+    }
+    .first .max-width {
+        padding: 0 50px;
+    }
+    .top .top-title {
+        padding: 40px 0;
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    .top-content .txt-1,
+    .top-content .txt-2 {
+        font-size: 1.1rem;
+    }
+    .wapper .card-img img {
+        width: 200px;
+    }
+    .wapper .card-info .title {
+        font-size: 1rem;
+        color: #fff;
+    }
+    .wapper .card-info .text-1,
+    .wapper .card-info .text-2 {
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    .second .second-content .left-content img {
+        width: 320px;
+        border-radius: 50%;
+    }
+    .second .second-content .rigth-content .title {
+        font-size: 2.2rem;
+        color: #21243d;
+    }
+    .second .second-content .rigth-content .text-1,
+    .second .second-content .rigth-content .text-3,
+    .second .second-content .rigth-content .text-3 {
+        color: #21243d;
+        font-size: 1.5rem;
+    }
+    .second .second-content .rigth-content a {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+    .second .second-content .left-content img {
+        width: 280px;
+        border-radius: 50%;
+    }
+    .second .second-content .rigth-content .title {
+        font-size: 2rem;
+        color: #21243d;
+    }
+    .second .second-content .rigth-content .text-1,
+    .second .second-content .rigth-content .text-3,
+    .second .second-content .rigth-content .text-3 {
+        font-size: 1.3rem;
+    }
+    .second .second-content .rigth-content a {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 740px) {
+    .content-hone .title {
+        font-size: 60px;
+    }
+    .text {
+        padding: 40px 0;
+    }
+    .text-1,
+    .text-2,
+    .text-3 {
+        font-size: 0.8em;
+    }
+    .content-hone a {
+        padding: 7px 25px;
+        font-size: 20px;
+    }
+    .first .max-width {
+        padding: 0 40px;
+    }
+    .top .top-title {
+        padding: 40px 0;
+        font-size: 2rem;
+    }
+    .top-content .txt-1,
+    .top-content .txt-2 {
+        font-size: 0.9rem;
+    }
+    .wapper .card-img img {
+        width: 150px;
+    }
+    .wapper .card-info .title {
+        font-size: 0.9rem;
+    }
+    .wapper .card-info .text-1,
+    .wapper .card-info .text-2 {
+        font-size: 0.6rem;
+    }
+    .second .second-content .left-content img {
+        width: 280px;
+        border-radius: 50%;
+    }
+    .second .second-content .rigth-content .title {
+        font-size: 2rem;
+        color: #21243d;
+    }
+    .second .second-content .rigth-content .text-1,
+    .second .second-content .rigth-content .text-3,
+    .second .second-content .rigth-content .text-3 {
+        color: #21243d;
+        font-size: 1.3rem;
+    }
+    .second .second-content .rigth-content a {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 590px) {
+    .home .max-width {
+        margin: auto 0 auto 50px;
+    }
+    .content-hone .title {
+        font-size: 60px;
+    }
+    .text {
+        padding: 40px 0;
+    }
+    .text-1,
+    .text-2,
+    .text-3 {
+        font-size: 0.8em;
+    }
+    .content-hone a {
+        padding: 6px 20px;
+        font-size: 18px;
+    }
+    .first .max-width {
+        padding: 0 10px;
+    }
+    .top .top-title {
+        padding: 40px 0;
+        font-size: 1.6rem;
+    }
+    .top-content .txt-1,
+    .top-content .txt-2 {
+        font-size: 0.7rem;
+    }
+    .wapper .card-img img {
+        width: 130px;
+    }
+    .wapper .card-info .title {
+        font-size: 0.7rem;
+    }
+    .wapper .card-info .text-1,
+    .wapper .card-info .text-2 {
+        font-size: 0.4rem;
+    }
+    .second .second-content .left-content img {
+        width: 280px;
+        border-radius: 50%;
+    }
+    .second .second-content .rigth-content .title {
+        font-size: 2rem;
+        color: #21243d;
+    }
+    .second .second-content .rigth-content .text-1,
+    .second .second-content .rigth-content .text-3,
+    .second .second-content .rigth-content .text-3 {
+        color: #21243d;
+        font-size: 1.3rem;
+    }
+    .second .second-content .rigth-content a {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 464px) {
+    .home .max-width {
+        margin: auto 0 auto 20px;
+    }
+    .content-hone a {
+        padding: 4px 15px;
+        font-size: 15px;
+    }
+    .top .top-title {
+        padding: 40px 0;
+        font-size: 1.6rem;
+    }
+    .top-content .txt-1,
+    .top-content .txt-2 {
+        font-size: 0.7rem;
+    }
+    .wapper {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .second .second-content .left-content img {
+        width: 280px;
+        border-radius: 50%;
+    }
+    .second .second-content .rigth-content .title {
+        font-size: 2rem;
+        color: #21243d;
+    }
+    .second .second-content .rigth-content .text-1,
+    .second .second-content .rigth-content .text-3,
+    .second .second-content .rigth-content .text-3 {
+        color: #21243d;
+        font-size: 1.3rem;
+    }
+    .second .second-content .rigth-content a {
+        padding: 10px 60px;
+        font-size: 20px;
+    }
 }
