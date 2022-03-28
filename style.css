@@ -214,7 +214,7 @@ header .max-width .logo img {
 
 .third {
     background-image: url('img/bg-cotent3.png');
-    height: 100vh;
+    height: 100%;
     background-size: cover;
 }
 
@@ -267,16 +267,13 @@ header .max-width .logo img {
     }
     .second .second-content .left-content img {
         width: 320px;
-        border-radius: 50%;
     }
     .second .second-content .rigth-content .title {
         font-size: 3rem;
-        color: #21243d;
     }
     .second .second-content .rigth-content .text-1,
     .second .second-content .rigth-content .text-3,
     .second .second-content .rigth-content .text-3 {
-        color: #21243d;
         font-size: 2rem;
     }
     .second .second-content .rigth-content a {
@@ -295,17 +292,15 @@ header .max-width .logo img {
     }
     .second .second-content .rigth-content .title {
         font-size: 2.5rem;
-        color: #21243d;
     }
     .second .second-content .rigth-content .text-1,
     .second .second-content .rigth-content .text-3,
     .second .second-content .rigth-content .text-3 {
-        color: #21243d;
         font-size: 1.8rem;
     }
     .second .second-content .rigth-content a {
-        padding: 10px 60px;
-        font-size: 20px;
+        padding: 10px 50px;
+        font-size: 18px;
     }
 }
 
@@ -316,21 +311,19 @@ header .max-width .logo img {
     .home .max-width {
         margin: auto 0 auto 70px;
     }
-    .first .max-width {
+    .first .max-width,
+    .third .max-width {
         padding: 0 100px;
     }
     .second .second-content .left-content img {
         width: 320px;
-        border-radius: 50%;
     }
     .second .second-content .rigth-content .title {
         font-size: 2.2rem;
-        color: #21243d;
     }
     .second .second-content .rigth-content .text-1,
     .second .second-content .rigth-content .text-3,
     .second .second-content .rigth-content .text-3 {
-        color: #21243d;
         font-size: 1.5rem;
     }
     .second .second-content .rigth-content a {
@@ -342,16 +335,13 @@ header .max-width .logo img {
 @media (max-width: 1015px) {
     .second .second-content .left-content img {
         width: 280px;
-        border-radius: 50%;
     }
     .second .second-content .rigth-content .title {
         font-size: 2rem;
-        color: #21243d;
     }
     .second .second-content .rigth-content .text-1,
     .second .second-content .rigth-content .text-3,
     .second .second-content .rigth-content .text-3 {
-        color: #21243d;
         font-size: 1.3rem;
     }
     .second .second-content .rigth-content a {
@@ -363,7 +353,6 @@ header .max-width .logo img {
 @media (max-width: 933px) {
     .content-hone .title {
         font-size: 70px;
-        color: #fff;
     }
     .text {
         padding: 40px 0;
@@ -371,48 +360,44 @@ header .max-width .logo img {
     .text-1,
     .text-2,
     .text-3 {
-        color: #fff;
         font-size: 1em;
     }
     .content-hone a {
         padding: 10px 40px;
     }
-    .first .max-width {
+    .first .max-width,
+    .third .max-width {
         padding: 0 50px;
     }
     .top .top-title {
         padding: 40px 0;
         font-size: 2.5rem;
-        color: #fff;
     }
     .top-content .txt-1,
     .top-content .txt-2 {
         font-size: 1.1rem;
     }
-    .wapper .card-img img {
+    .wapper .card-img img,
+    .third .wapper--2 .circle {
         width: 200px;
+        height: 200px;
     }
     .wapper .card-info .title {
         font-size: 1rem;
-        color: #fff;
     }
     .wapper .card-info .text-1,
     .wapper .card-info .text-2 {
-        color: #fff;
         font-size: 0.7rem;
     }
     .second .second-content .left-content img {
-        width: 320px;
-        border-radius: 50%;
+        width: 300px;
     }
     .second .second-content .rigth-content .title {
         font-size: 2.2rem;
-        color: #21243d;
     }
     .second .second-content .rigth-content .text-1,
     .second .second-content .rigth-content .text-3,
     .second .second-content .rigth-content .text-3 {
-        color: #21243d;
         font-size: 1.5rem;
     }
     .second .second-content .rigth-content a {
@@ -421,11 +406,9 @@ header .max-width .logo img {
     }
     .second .second-content .left-content img {
         width: 280px;
-        border-radius: 50%;
     }
     .second .second-content .rigth-content .title {
         font-size: 2rem;
-        color: #21243d;
     }
     .second .second-content .rigth-content .text-1,
     .second .second-content .rigth-content .text-3,
@@ -435,6 +418,18 @@ header .max-width .logo img {
     .second .second-content .rigth-content a {
         padding: 10px 60px;
         font-size: 20px;
+    }
+    .number {
+        font-size: 3rem;
+    }
+    .info {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 845px) {
+    .second .max-width {
+        padding: 250px 0 250px 150px;
     }
 }
 
@@ -454,7 +449,8 @@ header .max-width .logo img {
         padding: 7px 25px;
         font-size: 20px;
     }
-    .first .max-width {
+    .first .max-width,
+    .third .max-width {
         padding: 0 40px;
     }
     .top .top-title {
@@ -465,8 +461,10 @@ header .max-width .logo img {
     .top-content .txt-2 {
         font-size: 0.9rem;
     }
-    .wapper .card-img img {
+    .wapper .card-img img,
+    .third .wapper--2 .circle {
         width: 150px;
+        height: 150px;
     }
     .wapper .card-info .title {
         font-size: 0.9rem;
@@ -474,6 +472,9 @@ header .max-width .logo img {
     .wapper .card-info .text-1,
     .wapper .card-info .text-2 {
         font-size: 0.6rem;
+    }
+    .second .max-width {
+        padding: 250px 0 250px 100px;
     }
     .second .second-content .left-content img {
         width: 280px;
@@ -490,7 +491,7 @@ header .max-width .logo img {
         font-size: 1.3rem;
     }
     .second .second-content .rigth-content a {
-        padding: 10px 60px;
+        padding: 10px 40px;
         font-size: 20px;
     }
 }
@@ -514,7 +515,8 @@ header .max-width .logo img {
         padding: 6px 20px;
         font-size: 18px;
     }
-    .first .max-width {
+    .first .max-width,
+    .third .max-width {
         padding: 0 10px;
     }
     .top .top-title {
@@ -525,8 +527,10 @@ header .max-width .logo img {
     .top-content .txt-2 {
         font-size: 0.7rem;
     }
-    .wapper .card-img img {
+    .wapper .card-img img,
+    .third .wapper--2 .circle {
         width: 130px;
+        height: 130px;
     }
     .wapper .card-info .title {
         font-size: 0.7rem;
@@ -535,22 +539,22 @@ header .max-width .logo img {
     .wapper .card-info .text-2 {
         font-size: 0.4rem;
     }
+    .second .max-width {
+        padding: 250px 0 250px 70px;
+    }
     .second .second-content .left-content img {
-        width: 280px;
-        border-radius: 50%;
+        width: 260px;
     }
     .second .second-content .rigth-content .title {
-        font-size: 2rem;
-        color: #21243d;
+        font-size: 1.8rem;
     }
     .second .second-content .rigth-content .text-1,
     .second .second-content .rigth-content .text-3,
     .second .second-content .rigth-content .text-3 {
-        color: #21243d;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .second .second-content .rigth-content a {
-        padding: 10px 60px;
+        padding: 10px 40px;
         font-size: 20px;
     }
 }
@@ -571,26 +575,27 @@ header .max-width .logo img {
     .top-content .txt-2 {
         font-size: 0.7rem;
     }
-    .wapper {
+    .wapper,
+    .wapper--2 {
         flex-direction: column;
         padding: 10px 0;
     }
+    .second .max-width {
+        padding: 250px 0 250px 50px;
+    }
     .second .second-content .left-content img {
         width: 280px;
-        border-radius: 50%;
     }
     .second .second-content .rigth-content .title {
-        font-size: 2rem;
-        color: #21243d;
+        font-size: 1.8rem;
     }
     .second .second-content .rigth-content .text-1,
     .second .second-content .rigth-content .text-3,
     .second .second-content .rigth-content .text-3 {
-        color: #21243d;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .second .second-content .rigth-content a {
-        padding: 10px 60px;
-        font-size: 20px;
+        padding: 10px 40px;
+        font-size: 16px;
     }
 }
